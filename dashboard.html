@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Admin | SiKalog UMKM</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="admin-wrap">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo-badge">SK</span> SiKalog UMKM</div>
+      <nav>
+        <a href="dashboard.html" class="active">&#128202; Dashboard</a>
+        <a href="admin-produk.html">&#128230; Daftar Produk</a>
+        <a href="admin-produk-form.html">&#10133; Tambah Produk</a>
+        <a href="admin-kategori.html">&#128203; Kategori</a>
+        <a href="#" id="logoutBtn" class="logout">&#8630; Logout</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1>Dashboard</h1>
+        <span id="adminName" style="color:var(--muted);font-size:.9rem;"></span>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-icon">&#128230;</div>
+          <div>
+            <div class="num" id="statProduk">0</div>
+            <div class="label">Total Produk</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">&#128203;</div>
+          <div>
+            <div class="num" id="statKategori">0</div>
+            <div class="label">Total Kategori</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Produk Terbaru</h2>
+          <a href="admin-produk-form.html" class="btn btn-primary btn-sm">+ Tambah Produk Baru</a>
+        </div>
+        <div style="overflow-x:auto;">
+          <table>
+            <thead>
+              <tr><th>Gambar</th><th>Nama Produk</th><th>Kategori</th><th>Harga</th><th>Aksi</th></tr>
+            </thead>
+            <tbody id="recentProdukBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Detail Produk | SiKalog UMKM</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">SK</span>
+        <span>SiKalog UMKM</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="index.html#tentang">Tentang Kami</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> / <a href="katalog.html">Katalog</a> / <span id="breadcrumbNama">Produk</span></div>
+
+    <div id="detailContent" class="detail-layout"></div>
+
+    <div class="related-section">
+      <h2 class="section-title">Produk Terkait</h2>
+      <div class="grid-3" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <div class="container">
+      <div id="copyrightTrigger">&copy; <span id="tahun"></span> <span id="footerNama"></span>. Hak Cipta Dilindungi.</div>
+      <div class="footer-social">
+        <a href="#" id="linkIG" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" id="linkFB" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <a class="footer-wa" id="linkWA" href="#" target="_blank" rel="noopener">&#128241; Hubungi via WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

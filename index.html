@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SiKalog UMKM | Beranda</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo" id="logoHome">
+        <span class="logo-badge">SK</span>
+        <span>SiKalog UMKM</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="katalog.html">Katalog</a>
+        <a href="index.html#tentang">Tentang Kami</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1 id="heroTitle">Belanja Produk Lokal, Kualitas Terjamin</h1>
+        <p id="heroSlogan">Temukan produk pilihan UMKM lokal, dari makanan ringan hingga kerajinan tangan, langsung dari tangan pelaku usaha.</p>
+        <a href="katalog.html" class="btn btn-primary">Lihat Katalog</a>
+      </div>
+      <div class="hero-img">
+        <img src="https://picsum.photos/seed/sikalog-hero/700/525" alt="Produk UMKM" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk Unggulan -->
+  <section class="section container">
+    <h2 class="section-title">Produk Unggulan</h2>
+    <p class="section-sub">Pilihan produk terbaik dari SiKalog UMKM</p>
+    <div class="grid-3" id="featuredGrid"></div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section class="section container" id="tentang">
+    <h2 class="section-title">Tentang Kami</h2>
+    <div class="about-box">
+      <div>
+        <p id="aboutDesc"></p>
+      </div>
+      <ul class="info-list">
+        <li><b>Lokasi</b> <span id="aboutLokasi"></span></li>
+        <li><b>Email</b> <span id="aboutEmail"></span></li>
+        <li><b>WhatsApp</b> <span id="aboutWA"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <div class="container">
+      <div id="copyrightTrigger">&copy; <span id="tahun"></span> <span id="footerNama"></span>. Hak Cipta Dilindungi.</div>
+      <div class="footer-social">
+        <a href="#" id="linkIG" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" id="linkFB" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <a class="footer-wa" id="linkWA" href="#" target="_blank" rel="noopener">&#128241; Hubungi via WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

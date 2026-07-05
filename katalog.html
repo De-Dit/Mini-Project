@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SiKalog UMKM | Katalog Produk</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">SK</span>
+        <span>SiKalog UMKM</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html" class="active">Katalog</a>
+        <a href="index.html#tentang">Tentang Kami</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <h2 class="section-title">Katalog Produk</h2>
+    <p class="section-sub">Temukan produk yang Anda cari dari seluruh koleksi kami</p>
+
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Cari produk..." />
+      <button class="btn btn-primary" id="searchBtn">Cari</button>
+    </div>
+
+    <div class="katalog-layout">
+      <aside class="filter-box">
+        <h4>Kategori</h4>
+        <div id="categoryFilters"></div>
+      </aside>
+
+      <div>
+        <div class="grid-3" id="productGrid"></div>
+        <div id="emptyState" class="empty-state" style="display:none;">
+          Produk tidak ditemukan. Coba kata kunci atau kategori lain.
+        </div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="kontak">
+    <div class="container">
+      <div id="copyrightTrigger">&copy; <span id="tahun"></span> <span id="footerNama"></span>. Hak Cipta Dilindungi.</div>
+      <div class="footer-social">
+        <a href="#" id="linkIG" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" id="linkFB" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <a class="footer-wa" id="linkWA" href="#" target="_blank" rel="noopener">&#128241; Hubungi via WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/katalog.js"></script>
+</body>
+</html>

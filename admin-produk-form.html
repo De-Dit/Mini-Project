@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Form Produk | SiKalog UMKM</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="admin-wrap">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo-badge">SK</span> SiKalog UMKM</div>
+      <nav>
+        <a href="dashboard.html">&#128202; Dashboard</a>
+        <a href="admin-produk.html">&#128230; Daftar Produk</a>
+        <a href="admin-produk-form.html" class="active">&#10133; Tambah Produk</a>
+        <a href="admin-kategori.html">&#128203; Kategori</a>
+        <a href="#" id="logoutBtn" class="logout">&#8630; Logout</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1 id="formTitle">Tambah Produk</h1>
+        <a href="admin-produk.html" class="btn btn-secondary">&larr; Kembali</a>
+      </div>
+
+      <div class="panel" style="max-width:640px;">
+        <form id="produkForm">
+          <div class="form-group">
+            <label for="nama_produk">Nama Produk</label>
+            <input type="text" id="nama_produk" required maxlength="100" />
+          </div>
+
+          <div class="form-group">
+            <label for="id_kategori">Kategori</label>
+            <select id="id_kategori" required></select>
+          </div>
+
+          <div class="form-group">
+            <label for="harga">Harga (Rp)</label>
+            <input type="number" id="harga" min="0" step="500" required />
+          </div>
+
+          <div class="form-group">
+            <label for="stok">Stok</label>
+            <input type="number" id="stok" min="0" step="1" required />
+          </div>
+
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="gambar">Gambar Produk</label>
+            <div class="img-preview" id="imgPreview">Belum ada gambar</div>
+            <input type="file" id="gambar" accept=".jpg,.jpeg,.png,.webp" />
+            <p class="form-hint">Format JPG, PNG, atau WEBP. Ukuran maksimal 2 MB.</p>
+          </div>
+
+          <div class="form-group">
+            <label><input type="checkbox" id="is_active" style="width:auto;" checked /> Produk aktif ditampilkan di katalog</label>
+          </div>
+
+          <p class="form-error" id="formError"></p>
+
+          <div style="display:flex;gap:12px;margin-top:10px;">
+            <button type="submit" class="btn btn-primary">Simpan Produk</button>
+            <a href="admin-produk.html" class="btn btn-secondary">Batal</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/admin-produk-form.js"></script>
+</body>
+</html>

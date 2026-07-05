@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kelola Kategori | SiKalog UMKM</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="admin-wrap">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo-badge">SK</span> SiKalog UMKM</div>
+      <nav>
+        <a href="dashboard.html">&#128202; Dashboard</a>
+        <a href="admin-produk.html">&#128230; Daftar Produk</a>
+        <a href="admin-produk-form.html">&#10133; Tambah Produk</a>
+        <a href="admin-kategori.html" class="active">&#128203; Kategori</a>
+        <a href="#" id="logoutBtn" class="logout">&#8630; Logout</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+      <div class="admin-topbar">
+        <h1>Kelola Kategori</h1>
+      </div>
+
+      <div id="alertBox"></div>
+
+      <div class="panel" style="max-width:560px;margin-bottom:24px;">
+        <h2 style="margin-top:0;font-size:1.05rem;color:var(--primary-dark);">Tambah Kategori Baru</h2>
+        <form id="kategoriForm">
+          <div class="form-group">
+            <label for="nama_kategori">Nama Kategori</label>
+            <input type="text" id="nama_kategori" required maxlength="60" />
+          </div>
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi (opsional)</label>
+            <textarea id="deskripsi" rows="2"></textarea>
+          </div>
+          <p class="form-error" id="formError"></p>
+          <button type="submit" class="btn btn-primary">Tambah Kategori</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin-top:0;font-size:1.05rem;color:var(--primary-dark);">Daftar Kategori</h2>
+        <div style="overflow-x:auto;">
+          <table>
+            <thead>
+              <tr><th>Nama Kategori</th><th>Deskripsi</th><th>Jumlah Produk</th><th>Aksi</th></tr>
+            </thead>
+            <tbody id="kategoriBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/admin-kategori.js"></script>
+</body>
+</html>
